@@ -1,0 +1,31 @@
+# application.properties -> application.yml (modification)
+#
+#server.port=8083
+#
+#my.Message=Hello Raj
+#my.App=Cool App
+#my.AppMessage=Welcome to my ${my.App}
+#
+#listMessage=1,2,3
+#
+#db.username=user
+#db.password=pass
+#
+#management.endpoints.web.exposure.include=*
+
+server.port: 8083
+
+my:
+   Message: Hello Raj
+   App: Cool App
+   AppMessage: Welcome to my ${my.App}
+   
+listMessage: 1,2,3
+
+db:
+   username: user
+   password: pass
+
+management.endpoints.web.exposure.include: "*"
+   
+

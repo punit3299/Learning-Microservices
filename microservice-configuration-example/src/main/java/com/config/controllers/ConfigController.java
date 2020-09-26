@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConfigController {
 
 //	Value Injector
-	@Value("${myMessage}")
+	@Value("${my.Message}")
 	private String greetMessage;
 	
-	@Value("${myAppMessage}")
+	@Value("${my.AppMessage}")
 	private String appMessage;
 	
 //	Default value for value injection
