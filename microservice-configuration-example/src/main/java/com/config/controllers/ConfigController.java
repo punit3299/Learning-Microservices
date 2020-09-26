@@ -28,6 +28,9 @@ public class ConfigController {
 	@Autowired
 	private DbSetting dbSetting;
 	
+	@Autowired
+	private TestBean tb;
+	
 	@GetMapping("/greeting")
 	public String greeting() {
 		return greetMessage;
@@ -51,5 +54,12 @@ public class ConfigController {
 	@GetMapping("/setting")
 	public String getSetting() {
 		return dbSetting.getUsername()+", "+dbSetting.getPassword();
+	}
+	
+	@GetMapping("/test")
+	public String getTestBean() {
+		tb.setId(1);
+		tb.setName("Bean");
+		return tb.getId()+", "+tb.getName();
 	}
 }
