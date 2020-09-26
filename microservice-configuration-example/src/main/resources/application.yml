@@ -27,5 +27,8 @@ db:
    password: pass
 
 management.endpoints.web.exposure.include: "*"
+spring.profiles.active: test
+#we can also choose profile as default and override this through external config like 
+#command line
    
 

@@ -1,0 +1,15 @@
+server.port: 8083
+
+my:
+   Message: Hello Punit
+   App: Hot App
+   AppMessage: Welcome to my ${my.App}
+   
+listMessage: 1,2,3,4
+
+db:
+   username: user1
+   password: pass1
+
+management.endpoints.web.exposure.include: "*"
+
