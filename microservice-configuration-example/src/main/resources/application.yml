@@ -27,6 +27,7 @@ db:
    password: pass
 
 spring.cloud.config.uri: http://localhost:8888
+spring.application.name: config-example
 
 management.endpoints.web.exposure.include: "*"
 spring.profiles.active: test
